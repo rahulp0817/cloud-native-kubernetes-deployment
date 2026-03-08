@@ -74,7 +74,7 @@ sudo apt-get update
 ```
 ```bash
 sudo apt-get install docker.io -y
-sudo usermod -aG docker ubuntu && newgrp docker
+sudo usermod -aG docker $USER && newgrp docker
 ```
 #
 - <b id="Jenkins">Install and configure Jenkins (Master machine)</b>
