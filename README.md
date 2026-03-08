@@ -228,6 +228,10 @@ echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main |
 sudo apt-get update -y
 sudo apt-get install trivy -y
 ```
+ <p>Check the verison</p>
+```bash
+trivy -v
+```
 #
 - <b id="Argo">Install and Configure ArgoCD (Master Machine)</b>
   - <b>Create argocd namespace</b>
