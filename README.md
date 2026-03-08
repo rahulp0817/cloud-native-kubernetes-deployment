@@ -214,11 +214,13 @@ sudo usermod -aG docker ubuntu && newgrp docker
 ```
 #
 - <b id="Sonar">Install and configure SonarQube (Master machine)</b>
+  <p>SonarQube is an open-source platform for continuous inspection of code quality, designed to help developers fix bugs, vulnerabilities</p>
 ```bash
 docker run -itd --name SonarQube-Server -p 9000:9000 sonarqube:lts-community
 ```
 #
 - <b id="Trivy">Install Trivy (Jenkins Worker)</b>
+  <p>Trivy is an open-source security scanner developed by Aqua Security designed for cloud-native environments</p>
 ```bash
 sudo apt-get install wget apt-transport-https gnupg lsb-release -y
 wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
